@@ -1,5 +1,149 @@
-<!DOCTYPE html>
+<!DOCTYTPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8"></meta>
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
 <body>
-  <h1>Hii</h1>
-  <h2>hello</h2>
-</body>
+  <header align="center">
+    <h1>SURVEY FORM</h1>
+  </header>
+  <!-- links -->
+  <nav>
+    <ul>
+      <li><a href="#bio-data">Bio data</a></li>
+      <li><a href="#edu">Education</a></li>
+      <li><a href="#ot">Other</a></li>
+      <li><a href="#ci">Contact Info</a></li>
+    </ul>
+   </nav>
+
+   <form autocomplete="on">     
+   <fieldset>
+     <legend id="bio-data">Bio data</legend>
+     <figure>
+       <img src="C:\Users\LENOVO\OneDrive\Desktop\weave the web\account_circle-24px.svg" height="100" width="100">
+     </figure>
+
+     <label for="fname">First Name: </label>
+     <input type="text" required placeholder="first name">
+
+     &nbsp &nbsp &nbsp
+
+     <label for="lname">Last Name: </label>
+     <input type="text" placeholder="last name">
+
+     <br><br>
+
+
+    <label for="pwd">Password: </label>
+    <input type="password" required name="pwd">
+
+     <br><br>
+     <label for="bday">Birthdate</label>
+     <input type="date" name="bday">
+
+    <br><br>
+
+
+    <label for="age">Age: </label>
+    <input type="number">
+
+    <br><br>
+
+
+    <label for="gender">Gender: </label>
+    <br>
+    <input type="radio" name="gender" value="male"><label for="male">Male</label><br>
+    <input type="radio" name="gender" value="female"><label for="female">Female</label><br>
+    <input type="radio" name="gender" value="other"><label for="other">Other</label><br>
+
+   </fieldset>
+   <br>
+   <!-- Education -->
+   <fieldset>
+     <legend id="edu">Education</legend>
+     <!--current year-->
+
+     <label for="cryr">Current year: </label>
+      <select>
+        <option>FE</option>
+        <option>SE</option>
+        <option>TE</option>
+        <option>BE</option>
+        
+      </select> 
+      <br><br>
+      <!-- clg name -->
+      
+     <label for="clgname">Name of the college: </label>
+     <select>
+       <option>GEC</option>
+       <option>DBCSE</option>
+       <option>PCCE</option>
+       <option>AITD</option>
+       <option>OTHER</option>
+     </select> 
+     <BR><BR>
+      <!-- languages -->
+      <label for="lang">Languages you know</label>
+      <input type="checkbox">C
+      <input type="checkbox">C++
+      <input type="checkbox">JAVA
+      <input type="checkbox">PYTHON
+      <input type="checkbox">Other
+
+
+   </fieldset>
+   <br><br>
+
+   <!--other -->
+   <fieldset>
+     <legend id="ot">Other</legend>
+     
+     <!--time-->
+      <label for="time">What time do u wake up everyday ? </label>
+      <input type="time">
+
+      <br><br>
+      <!--slide bar-->
+        <label for="slide">How much do u love coding ? </label>
+        
+        <input type="range" min="0" max="100" step="10" value="0">
+
+        <br><br>
+      <!--colour-->
+        <label for="slide">Favourite colour ? </label>
+        
+        <input type="color">
+
+   </fieldset>
+
+   
+   <br><br>
+   <!--contact info-->
+    <fieldset>
+      <legend id="ci">Contact info</legend>
+
+      <!--mail-->
+      <label for="mail">E-mail id:  </label>
+      <input type="email" required name="mail" >
+      
+      <br><br>
+      <!--pno-->
+      <label for="pno">Phone No: </label>
+      <input type="tel" required name="pno" maxlength="10">
+
+      <br><br>
+      <!--address-->
+      <label for="address">Address: </label>
+      <textarea cols="30" rows="5"></textarea>
+   </fieldset>
+
+   <br>
+   <!--submit-->
+   <button>Submit</button>
+</form>
+  </body>
+</html>
